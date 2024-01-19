@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  app:
+    container_name: param_param_assignment11
+    image: app-dev
+    build: 
+      target: development
+    volumes:
+      - .src:/my-app/src
+    ports:
+      - 7775:3000
+  
